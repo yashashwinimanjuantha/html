@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>HTML LIST </title>
+        <style>
+            .emoji li::marker{
+                content: "😍";
+            }
+            .emoji li :nth-child(2)::marker{
+                content:"🤩";
+            }
+            li :nth-child{
+                 list-style-image: url() ;
+            }
+
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>html lists</h1>
+            <p>there are three types of list in html</p>
+        </center>
+        <hr>
+        <p>1) Ordered  number list(using ol tag) </p>
+        <p>2) unordered or bullet list (using ul tags)</p>
+        <p>3) Description list(using the dl tags)</p>
+        <hr>
+        <h1>unordered or bullet list (using ul tag)</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <LI>JS</LI>
+            <LI>react js</LI>
+            <li>node js</li>
+            <li>expresss</li>
+            <li>dongo db</li>
+        </ul>
+        <h1>Unordered list types</h1>
+        <ul>
+            <li>disc</li>
+            <li>circle</li>
+            <li>square</li>
+            <li>none</li>
+        </ul>
+        <hr><hr>
+        <ul type:"disc">
+            <li>HTML</li>
+            <li>CSS</li>
+            <LI>JS</LI>
+            <LI>react js</LI>
+            <li>node js</li>
+            <li>expresss</li>
+            <li>dongo db</li>
+
+        </ul>
+        <hr>
+        <ul type:"circle">
+            <li>HTML</li>
+            <li>CSS</li>
+            <LI>JS</LI>
+            <LI>react js</LI>
+            <li>node js</li>
+            <li>expresss</li>
+            <li>dongo db</li>
+        </ul>
+        <hr>
+        <ul type:"none">
+            <li>HTML</li>
+            <li>CSS</li>
+            <LI>JS</LI>
+            <LI>react js</LI>
+            <li>node js</li>
+            <li>expresss</li>
+            <li>dongo db</li>
+        </ul>
+        <h1>Display nested unordered list</h1>
+        <ul>
+            <li>
+                <h4>HTML</h4>
+                <ul>
+                    <li>HTML</li>
+                    <LI>HTML5</LI>
+                </ul>
+            </li>
+            <li>
+                <h4>css</h4>
+                <ul>
+                    <li>
+                        <li>css</li>
+                        <li>css3</li>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </body>
+</html>

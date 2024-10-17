@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>dynamic marquee</title>
+        <style>
+            marquee img{
+                width: 250px;
+            }
+            marquee:hover img{
+                filter: blur(50px);
+            }
+            img:hover{
+                filter: blur(0px) !important;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>DYNAMIC MARQUEE TAG</h1>
+        </center>
+        <marquee behavior="" direction="" class="m1"scrollamount="20" id="firstmarquee" onmouseover="stopscroll()" onmouseout="startagain()"> <img src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/04/port-2-img-7.jpg" alt="">
+
+            <img src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/04/port-2-img-6.jpg" alt="">
+
+            <img src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/04/port-2-img-5.jpg" alt="">
+            <img src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/04/port-2-img-7.jpg" alt="">
+
+            <img src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/04/port-2-img-6.jpg" alt="">
+
+            <img src="https://pelicula.qodeinteractive.com/wp-content/uploads/2020/04/port-2-img-5.jpg" alt="">     </marquee>
+        <script>
+            let marquee=document.getElementById('firstmarquee');
+            function stopscroll(){
+                marquee.stop();
+            }
+            function startagain(){
+                marquee.start();
+            }
+        </script>
+    </body>
+</html>

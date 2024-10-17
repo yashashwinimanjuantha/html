@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>HTML</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            section{
+                background-color: lightgray;
+                padding: 20px;
+                min-height: 100vh;
+                /* background: url(./waves.svg) bottom no-repeat;
+                background-size: 100%; */
+            }
+            .card{
+                width: 40%;
+                background-color: #fff;
+                min-height: 120vh;
+                margin: auto;
+                background: url(./waves.svg);
+                background-size: cover;
+                padding: 20px;
+            }
+            .top{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .heading{
+                font-size: 3rem;
+                margin-top: 15px;
+                letter-spacing: 3px;
+            }
+            .address{
+                display: flex;
+                margin-top: 20px;
+                gap: 30px;
+            }
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            table th{
+                padding: 10px;
+                background-color: #5050504d;
+            }
+            table td{
+                padding: 10px;
+                border: none;
+            }
+            small{
+                color: rgb(62, 62, 62);
+            }
+        </style>
+    </head>
+    <body>
+        
+        <section>
+            <div class="card">
+               <div class="top">
+                <div>
+                    <p><small>Date</small></p>
+                    <p><small>Logo</small></p>
+                </div>
+                <p>Any text</p>
+               </div>
+               <h1 class="heading">INVOICE</h1>
+               <p><b>Date:</b> 01/01/2024</p>
+
+               <div class="address">
+                <div class="left">
+                    <p><b>Invoice To</b></p>
+                    <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus libero voluptatem at repellat, beatae odio?</small></p>
+                </div>
+                <div class="right">
+                    <p><b>Invoice From</b></p>
+                    <p><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus libero voluptatem at repellat, beatae odio?</small></p>
+                </div>
+               </div>
+
+               <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>GST</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td>john</td>
+                    <td>1</td>
+                    <td>0.99%</td>
+                    <td>&#8377;1999/-</td>
+                </tr>
+                <tr>
+                    <td>john</td>
+                    <td>1</td>
+                    <td>0.99%</td>
+                    <td>&#8377;1999/-</td>
+                </tr>
+                <tr>
+                    <td>john</td>
+                    <td>1</td>
+                    <td>0.99%</td>
+                    <td>&#8377;1999/-</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><h4>Total</h4></td>
+                    <td>&#8377;20000/-</td>
+                </tr>
+               </table>
+
+               <br>
+               <br>
+
+               <p><b>Payment Method:</b>  Lorem, ipsum.</p>
+               <p><b>Note: </b> Lorem, ipsum.</p>
+            </div>
+        </section>
+    </body>
+</html>

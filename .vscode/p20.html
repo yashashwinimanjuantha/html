@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Band</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container{
+                min-height: 100vh;
+                background-color: rgb(254, 205, 185);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+            }
+            .band{
+                width: 300px;
+                height: 60px;
+                background-color: rgb(83, 48, 19);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                box-shadow: inset 2px 2px 10px rgb(33, 15, 1), inset 3px 4px 15px rgb(33, 15, 1);
+            }
+            .band h1{
+                font-family: "Dancing Script", cursive;
+                font-optical-sizing: auto;
+                font-weight: 700;
+                font-style: normal;
+                color: rgb(255, 227, 205);
+                font-size: 2rem;
+            }
+
+            .band::before{
+                content: "";
+                position: absolute;
+                border: 30px;
+                transform: translateX(-123px);
+                border-color: transparent transparent transparent rgb(254, 205, 185);
+                border-style: dotted;
+            }
+            .band::after{
+                content: "";
+                position: absolute;
+                border: 30px;
+                transform: translateX(123px);
+                border-color: transparent rgb(254, 205, 185) transparent transparent;
+                border-style: solid;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="container">
+            <div class="band">
+                <h1>Hello World!</h1>
+            </div>
+        </section>
+    </body>
+</html>

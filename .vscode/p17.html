@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>HTML SELECT TAGS</title>
+    </head>
+    <body>
+        <center>
+            <h1>SELECT TAGS</h1>
+            <p>this tag is used to create the dropdowns in websites</p>
+        </center>
+        <select name="language" id="language">
+            <option value="" disabled selected>select course</option>
+            <option value="html">html</option>
+            <option value="html">html 5</option>
+            <option value="html">css</option>
+            <option value="html">css3</option>
+            <option value="html">js</option>
+            <option value="html">react js</option>
+            <option value="html">bootstrap</option>
+        </select>
+
+
+            <h1>groupin options in select</h1>
+            <select name="course" id="course">
+            <option value="" disabled selected>select course</option>
+            <optgroup label="month 1">
+            <option value="html">html</option>
+            <option value="html">html 5</option>
+            </optgroup>
+            <optgroup label="month 2">
+            <option value="html">css</option>
+            <option value="html">css3</option>
+            </optgroup>
+            <optgroup label="month 3">
+            <option value="html">js</option>
+            <option value="html">react js</option>
+            <option value="html">bootstrap</option>
+            </optgroup>
+        </select>
+        
+
+            <button type="button" onclick="getvalue()">Call function</button>
+
+            <script>
+                function getvalue(){
+                    console.log(document.getElementById('course').value);
+                }
+            </script>
+
+    </body>
+</html>

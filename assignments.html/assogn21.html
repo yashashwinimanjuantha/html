@@ -1,0 +1,92 @@
+ <html>
+<head>
+    <title>Watermelon Design</title>
+    <style>
+        * {
+           
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .watermelon {
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle at 50% 50%, #ff5a5a 50%, #75a931 51%);
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .ring {
+            width: 90%;
+            height: 90%;
+            background: radial-gradient(circle at 50% 50%, #75a931 20%, #57a422 21%);
+            border-radius: 50%;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+        }
+
+        .seeds {
+            position: absolute;
+            width: 10px;
+            height: 18px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .seeds:nth-child(1) {
+            top: 30%;
+            left: 45%;
+        }
+
+        .seeds:nth-child(2) {
+            top: 35%;
+            left: 60%;
+        }
+
+        .seeds:nth-child(3) {
+            top: 50%;
+            left: 65%;
+        }
+
+        .seeds:nth-child(4) {
+            top: 65%;
+            left: 60%;
+        }
+
+        .seeds:nth-child(5) {
+            top: 70%;
+            left: 45%;
+        }
+
+        .seeds:nth-child(6) {
+            top: 65%;
+            left: 30%;
+        }
+
+        .seeds:nth-child(7) {
+            top: 50%;
+            left: 25%;
+        }
+
+        .seeds:nth-child(8) {
+            top: 35%;
+            left: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="watermelon">
+        <div class="ring"></div>
+        <div class="seeds"></div>
+        <div class="seeds"></div>
+        <div class="seeds"></div>
+        <div class="seeds"></div>
+        <div class="seeds"></div>
+        <div class="seeds"></div>
+        <div class="seeds"></div>
+        <div class="seeds"></div>
+    </div>
+</body>
+</html>

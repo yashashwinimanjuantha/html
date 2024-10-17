@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>HTML FORMS</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+                font-style: normal;
+            }
+            section{
+                height: 100vh;
+                background-color: orangered;
+                padding: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            section form{
+                background-color: white;
+                width: 330px;
+                padding: 30px;
+                box-sizing: 15px 15px 0px black;
+                border-radius: 10px;
+                box-shadow: 15px 15px 0px black;
+                border-radius: 10px;
+            }
+            input{
+                width: 100%;
+                margin-bottom: 15px;
+                padding: 10px;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+                border: 1px solid white;
+            }
+            button{
+                width: 100%;
+                border: none;
+                background-color: orangered;
+                color: white;
+                border-radius: 10px;
+            }
+            button:hover{
+                background-color: rgb(184, 114, 88);
+                cursor: pointer;
+                transition: 0.8s;
+            }
+        </style>
+    </head>
+   <body>
+    <section>
+        <form>
+            <h3>Create Account</h3>
+            <br>
+            <label for="name">Username</label><br>
+            <input type="text" id="name" placeholder="enter your name" name="username" required>
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="enter your email" name="email" required>
+            <label for="password">password</label>
+            <input type="password" id="password" placeholder="enter your password" name="password" >
+            <label for="cpassword">confirm password</label>
+            <input type="password" name="password" id="cpassword" required>
+            <small>do you hav an account already <a href="">sign in</a></small><br><br>
+            <button>submit</button>
+        </form>
+    </section>
+   </body>
+</html>

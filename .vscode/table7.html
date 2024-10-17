@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>HTML TABLES</title>
+        <style>
+          table td img{
+            width: 60%;
+            height: 60%;
+            border-radius: 100%;
+            border: 2px solid orange;
+            padding: 5px;
+          }
+          body{
+            background-color:white;
+          }
+          table{
+            border-collapse:collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        table th{
+            background-color: rgb(69, 30, 210);
+            letter-spacing: 2px;
+            color: white;
+            border: 2px solid black;
+        }
+        table td:hover{
+            background-color: grey;
+            color: rgba(110, 177, 180, 0.91);
+
+        }
+        table td{
+            background-color: blue;
+            color: white;
+            border: 2px solid white;
+        }
+
+        </style>
+    
+    </head>
+    <body>
+        <center>
+            <br>
+            <table border="1" cellpadding:"2" cellspacing:"0" width:"60%">
+                <caption>Tables with rowspan</caption>
+                <tr>
+                    <th rowspan="3">username</th>
+                </tr>
+                <tr>
+                    <th>first name</th>
+                    <td>John</td>
+                    <td>John1</td>
+                </tr>
+                <tr>
+                    <th>Last name</th>
+                    <td>doc</td>
+                    <td>doc</td>
+                </tr>
+                <tr>
+                    <th>profile</th>
+                    <th></th>
+                    <td><img src="image.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th>profile</th>
+                    <th></th>
+                    <td><img src="image.png" alt=""></td>
+                </tr>
+                <tr>
+                    <th>address1</th>
+                    <td>test address</td>
+                    <td>test address</td>
+                </tr>
+                <tr>
+                    <th>address2</th>
+                    <td>test address</td>
+                    <td>test address</td>
+                </tr>
+
+            </table>
+        </center>
+    </body>
+</html>

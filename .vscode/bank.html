@@ -1,0 +1,362 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .requ{
+            width: 200px;
+            height: 20px;
+            color: white;
+            background-color: red;
+            border-radius: 5px;
+            padding-left: 20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section{
+            min-height: 100vh;
+            background-color: rgb(255, 0, 21);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+        form{
+            width: 70%;
+            background-color: #fff;
+            padding: 30px;
+        }
+        span{
+            color: red;
+        }
+        label{
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="date"], select, input[type="tel"],input[type="email"]{
+            padding: 8px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+            width: 300px;
+
+        }
+        .address  input[type="text"]{
+            padding: 8px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+            width: 625px;
+        }
+        input[type="text"]:focus{
+            box-shadow: 0px 0px 3px rgba(255, 0, 21, 0.733);
+            border: 1px solid rgb(255, 0, 21);
+        }
+
+        button[type="button"]{
+            padding: 10px;
+            width: 150px;
+            background-color: transparent;
+            border: none;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 1.1rem;
+        }
+        button[type="button"]:hover{
+            background-color: #cccccc59;
+        }
+        .btns{
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: end;
+            padding: 10px;
+        }
+
+        button[type="submit"]{
+            border: none;
+            width: 150px;
+            border-radius: 10px;
+            background-color: rgb(255, 0, 21);
+            color: #fff;
+            padding: 10px;
+        }
+        button[type="submit"]:hover{
+            background-color: rgb(255, 39, 57);
+        }
+        button{
+            cursor: pointer;
+        }
+        h1{
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .radio{
+            display: flex;
+            gap: 30%;
+            align-content: space-between;
+            align-content: space-around;
+        }
+        .btn{
+            display: flex;
+            padding-left: 30%;
+            gap:10px;
+            padding-top: 4%;
+            border-radius: 5px;
+        }
+        .btn1{
+            width: 150px;
+            height: 50px;
+            border-radius: 5px;
+        }
+        .btn2{
+            width: 200px;
+            height: 50px;
+            background-color: green;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn1:hover{
+            background-color: gray;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form>
+            <center>
+                <h1>Creadit Card Application</h1>
+            </center>
+            <h4>Personal Information</h4>
+            <br>
+            <hr>
+            <label for "">title<span>*</span></label>
+            <div style="display: flex;gap:50px ">
+            <label for=" "><input type="radio"> Ms</label>
+            <label for=" "><input type="radio"> Mrs</label>
+            <label for=" "><input type="radio"> Miss</label>
+            <label for=" "><input type="radio"> Dr</label>
+            <label for=" "><input type="radio"> Other</label>
+            </div>
+            <label for="" >Full Name <span>*</span></label>
+            <br>
+            <div style="display: flex; gap:30px;">
+                <div>
+                    <input type="text">
+                    <br>
+                    <label for="" style="margin-top:2px ;">First name</label>
+                </div>
+                <div>
+                    <input type="text">
+                    <br>
+                    <label for="" style="margin-top:2px ; font-size:smaller">Last name name</label>
+                </div>
+            </div>
+            <br>
+            <label for="">gender<span>*</span></label>
+            <br>
+            <label for=""><input type="radio" name="" id="">Male</label>
+            <br>
+            <label for=""><input type="radio" name="" id="">female</label>
+            <br>
+            <label for="">mother maiderns name<span>*</span></label>
+            <br>
+            <input type="text">
+            <br>
+            <label for=" ">date of birth<span>*</span></label>
+            <br>
+            <input type="date"><br>
+            <small>dates</small>
+            <br>
+            <p class="requ">This field is Required</p>
+            <label for="">Occupation<span>*</span></label>
+            <br>
+            <input type="text">
+            <br>
+            <label for="education ">Highest Education<span>*</span></label>
+            <select name="education" id="education">
+                <option value="">please select</option>
+                <option value="">university</option>
+                <option value="">collage</option>
+                <option value="">primary</option>
+                <option value="">other</option>
+                <option value="">not avilable</option>
+            </select>
+            <br>
+            <label for ="">Telephone Number(Mobile)<span>*</span></label>
+            <input type="text" placeholder="(_) __-__">
+            <br>
+            <label for ="">Telephone Number(HOME)<span>*</span></label>
+            <input type="text" placeholder=" ">
+            <br>
+            <br>
+            <label for ="">Telephone Number(Work)<span>*</span></label>
+            <input type="text" placeholder="(000) 000-0000">
+            <BR>
+                <br>
+                <label for ="">E-mail<span>*</span></label>
+                <input type="email" placeholder=" ">
+                <br>
+                <small>example@example.com</small>
+                <br>
+                <br>
+
+                <label for="">Marital Status<span>*</span></label>
+            <br>
+            <div style="display: flex;" >
+                <div>
+                    <label for=""><input type="radio" name="" id=""> Single</label>
+                    <label for=""><input type="radio" name="" id=""> Married</label>
+                </div>
+                
+                <div>
+                    <label for=""><input type="radio" name="" id=""> Divorced</label>
+                    <label for=""><input type="radio" name="" id=""> Widow</label>
+                </div>
+            </div>
+            
+            <br>
+            <br>
+            <label for ="">Passport/National ID</label>
+            <br>
+            <input type="text" >
+            <BR>
+                <br>
+            <div class="address">
+                <label for ="">Address<span>*</span></label>
+            <input type="text" >
+            <br>
+            <small>Street Address</small>
+            <BR>
+                <label for ="">Address<span>*</span></label>
+            <input type="text" >
+            <br>
+            <small>Street Address Line2</small>
+            <br>
+            </div>
+            
+           <br>
+           <div style="display: flex; gap:30px;">
+            <div>
+                <input type="text">
+                <br>
+                <label for="" style="margin-top:2px ;"><small>City</small></label>
+            </div>
+            <div>
+                <input type="text">
+                <br>
+                <label for="" style="margin-top:2px ; font-size:smaller"><small>State</small></label>
+            </div>
+           </div>
+            <br>
+            <br>
+            <div style="display: flex; gap:30px;">
+            <div>
+                <input type="text">
+                <br>
+                <label for="" style="margin-top:2px ;"><small> Zip code</small> </label>
+            </div>
+            <div>
+
+           
+
+          
+            <select name="education" id="education">
+                <option value="">please select</option>
+                <option value="">university</option>
+                <option value="">collage</option>
+                <option value="">primary</option>
+                <option value="">other</option>
+                <option value="">not avilable</option>
+            </select>
+            <label for="" style="margin-top:2px ;"><small>Country</small></label>
+            <br>
+            </div>
+            </div>
+         <br>
+
+     
+         <h4>Financial Information</h4>
+            <br>
+            <hr>
+            <br>
+            <label for "">Are you a<span>*</span></label>
+            <div>
+                <label for=" "><input type="radio"> Homeowner</label>
+            <label for=" "><input type="radio"> Renter</label>
+            <label for=" "><input type="radio"> Other</label>
+            <br>
+            <br>
+
+            <label for="" style="margin-top:2px ;">If you are a Homeowner,what is the property value?<span>*</span></label>
+            <br>
+            <input type="text" placeholder="$">
+            <br>
+            <br>
+            <label for="" style="margin-top:2px ;">Gross Monthly Income<span>*</span></label>
+            <br>
+            <input type="text" placeholder="$">
+            <br>
+            <br>
+            <label for="" style="margin-top:2px ;">Mortgage Payment Monthly <span>*</span></label>
+            <br>
+            <input type="text" placeholder="$">
+            <br>
+            <br>
+            <label for="" style="margin-top:2px ;">Would you like to insure your credit card(s)? <span>*</span></label>
+            <br>
+            <label for=" "><input type="radio"> Renter</label>
+            <br>
+            <label for=" "><input type="radio"> Other</label>
+
+            <br>
+            <br>
+            <label for="" style="margin-top:2px ;">Date</label>
+            <br>
+            
+            <input type="Date" >
+            <br>
+            <small>Date</small>
+            <br>
+<br>
+<h3>Declaration</h3>
+
+<br>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<br>
+<br>
+<div style="padding-left: 50%; display:flex;gap:5%"  >
+    <div>
+        <label for="" style="margin-top:2px ;">Sign <span>*</span></label>
+    </div>
+    <div>
+        <input type="text" style="width: 300px; height:100px">
+        <br>
+        <small>Power By <span style="color: green;">jotform sign</span> </small>
+    </div>
+    
+</div>
+<br>
+<hr>
+<div class="btn">
+    <div >
+        <button class="btn1">Print Form</button>
+    </div>
+    <div >
+        <button class="btn2">Submit</button>
+    </div>
+</div>
+        
+        </form>
+    </section>
+    
+</body>
+</html>

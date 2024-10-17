@@ -1,0 +1,16 @@
+//to create a new repo and upload files to that repo first time
+------------------------------------------------------------------
+git init => to initialize the repo in our local folder
+git add . =>to add all the files to repo
+git commit -m "message" =. to commit the changes
+git remote add origin repo-url => to link our local folder to github repo
+git push -u orgin master (your branch name )=>to upload file to repo
+
+
+
+-----------------------------------------------------------------
+//to upload the repo
+-----------------------------------------------------------------
+git add .=>to add our local all files to repo
+git commit -m "message" =>to commit the changes.
+git push -u origin (your branch name)=>to upload the file repo.
